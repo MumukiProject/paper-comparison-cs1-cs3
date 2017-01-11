@@ -1,0 +1,38 @@
+\section{Previous work and dicussion} \label{previous-work}
+
+%length: 1 page
+%resposible: Lu & Gui
+
+%content:
+%previous work on Smart Content for CS education and automatic formative feedback
+
+In this section we discuss our results and we briefly review previous work on educative coding tools to teach functional programming. 
+
+As we mentioned in Section~\ref{introduction}, almost all educative coding tools focus on imperative or object oriented programming languages. Moreover, most of these tools are generally only used in a single  university, usually when they were developed~\cite{brusilovsky2014increasing}. To the best of our knowledge, there is only one coding tool for Haskell that was developed with educative purposes: Ask-Elle.  
+
+% WIP (Guillaume)
+%Let us review previous Smart Learning Content~\cite{brusilovsky2014increasing} for
+%functional programming teaching, with automatic formative feedback: Ask-Elle for Haskell and Programmer's Learning Machine for Scala.
+
+Ask-Elle~\cite{Gerdes:2012,gerdes2016ask} is a web-based tutor
+that shares many features with Mumuki. It provides exercises in Haskell with automatic feedback. As with Mumuki, each exercise is automatically evaluated using tests and strategies, the latter
+being similar to Mumuki's expectations. Strategies use syntactical analysis but also program
+transformation to drive automatic feedback, that is, tests and hints.
+As for tests, Ask-Elle uses QuickCheck~\cite{Claessen2000} to generate random tests in order to evaluate for correctness. This
+impedes some students' strategy of making programs pass only for a finite number of tests,
+as is possible for some of Mumuki's exercises.
+%Finally, Ask-Elle does not provide the console feature of Mumuki.
+
+Ask-Elle was evaluated in several experiments at a single University. The students performance on the exercises  automatically evaluated by the tool was reported but it was not analysed by topic nor comparatively between students with different backgrounds. The students attitude towards the tool was evaluated through a questionnaire as we did. However, the authors do not report following any standard methodology. Its effect on course dropouts was not reported but the authors report that the students considered Ask-Elle feedback useful when they found difficult exercises.  
+
+Differently from Mumuki, Ask-Elle allows a teacher to specify different correct solutions for each exercise and to predict common errors and provide appropriate feedback when designing an exercise. Given our results when applying TAM, we believe that Mumuki could also benefit from improved feedback. However, the method implemented in Ask-Elle is too time consuming for teachers so we plan to improve the feedback using data-driven techniques that mine previous students solutions and previous teacher feedback~\cite{Price:2015}. In our study , we observed that feedback was assessed as better in the CS1 course compared to the CS3 course. This may be due to the fact that the CS1 course included a second stage where common errors were explained by the teacher and students were encouraged to manually test their code on paper. We plan to further investigate this in future work.  
+
+We found a few educative coding tools for another functional language, namely Scala. A representative example is the Programmer's Learning Machine. 
+The Programmer's Learning Machine~\cite{quinson2015teaching} (PLM) is a client-side program
+that provides several kinds of microworlds, in which student's programs are visualized
+when executed. It provides series of exercices that can be solved with the imperative
+languages Java and Python, as with the funcional language Scala.
+As most of the microworlds in PLM are graphical, the
+feedback provided is purely visual, which is not comparable with the feedback Mumuki provides. One exception is the
+microworld ``Unit Testing'', which provides test-based feedback. PLM does not provide
+feedback based on syntactical analysis nor program transformations.

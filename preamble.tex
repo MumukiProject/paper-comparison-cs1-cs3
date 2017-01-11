@@ -1,0 +1,33 @@
+% $Id: preamble.tex 456 2014-03-22 21:45:27Z fernando $
+
+\usepackage[draft,inline,noindex,nomargin]{fixme}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{xspace}
+\newenvironment{dialogue}%
+   {\setlength\topsep{0pt}%
+    \begin{small}%
+    \begin{it}%
+    \begin{list}{}%
+         {\setlength{\leftmargin}{.6cm}}%
+         \item[]}%
+   {\end{list}%
+    \end{it}%
+    \end{small}} 
+
+\newcommand{\Chatbot}{\textsf{Chatbot}\xspace}
+\newcommand{\Alice}{\textsf{Alice}\xspace}
+\newcommand{\DA}{\textsf{Dale Aceptar}\xspace}
+\newcommand{\Alibi}{``Alibi''\xspace}
+\newcommand{\Sect}[1]{Section~\ref{sec:#1}\xspace}
+\newcommand{\Tab}[1]{Table~\ref{tab:#1}\xspace}
+
+\newenvironment{tightcenter}{%
+  \setlength\topsep{0pt}
+  \setlength\parskip{0pt}
+  \begin{center}
+}{%
+  \end{center}
+}
+

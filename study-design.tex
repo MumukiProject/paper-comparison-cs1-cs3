@@ -1,0 +1,69 @@
+\section{Study Design} \label{study-design}
+
+%length: 1 page
+%responsible: Lu & Gui
+
+%content:
+%sample demographics
+%description of the data collection
+%description of the data analysis
+%describe groups of students, demographics, define objective and automatic metrics, subjective and self reported, TAM
+
+We describe the contexts where we conducted the observational study outlining the different interventions performed and the data that was collected. 
+
+\subsection{Data Collection and Analysis}
+
+We performed interventions in two different public universities. In both of them we taught Haskell using Mumuki. %In particular we taught function composition, modularity and parameters, types, conditionals and pattern matching, lists and tuples and direct recursion.  
+
+Most previous work reporting learning experiences using an educative coding tool are conducted within a single institution and a single course. We selected two institutions that introduce functional programming with Haskell but have groups of students with different characteristics to replicate our observational study and validate our results. One of the public universities, called UTN, introduces Haskell to CS3 students while the other, called UNC introduces Haskell to CS1 students. In total, 114 students participated in this observational study. 59 students at CS3 level and 55 students at CS1 level.
+
+%\subsection{Data Collection and Analysis}
+
+%\begin{table}[h]
+%\begin{small}
+%\begin{tabular}{|l|c|c|c|c|}
+%\hline
+%University level 					           & HS & CS1 & CS3 & CS8    \\
+%\hline
+%Number of students at the start & 7  & 55 & 59   & 8 \\
+%\hline
+%Number of students at the end & 7  & 36 & 51   & 6 \\
+%\hline
+%\end{tabular}
+%\end{small}
+%\caption{Participants Distribution. The difference between the number of student at the start and end of the course indicates course dropouts.
+%}
+%\label{table:part_dist}
+%\end{table}
+
+%In the following subsections we describe the universities contexts where we conducted the observational study outlining the different interventions in CS1 and CS3. In Section~\ref{findings} we report the quantitative and the qualitative results. 
+
+All students programmed in Haskell employing concepts such as function composition and modularisation, conditional control structures, pattern matching, list structures and functions on lists, and recursion as a fundamental repetition control structure. The students in both groups had to solve the same Haskell exercises in Mumuki. Students were asked to solve 82 programming exercises divided in five topics. Using the same exercises allowed for comparison of the students understanding in the two groups.
+
+%All the students were evaluated with a final test that evaluated the taught concepts. The difference between the number of student participating and tested indicates course dropouts.
+
+We asked the students to complete a questionnaire designed following the Technology Acceptance Model (TAM) methodology~\cite{Chuttur:2009} in order to evaluate their attitude towards Mumuki. 
+
+We also conducted lesson observations during the Haskell programming classes. Observations allowed us to gather data on student understanding, engagement and on transferring concepts learnt with other languages. In this paper, we only report on the Haskell programming stage to compare how students with different programming background learnt basic programming concepts and applied them to functional programming. We do not present data on students learning other programming languages. 
+
+After the course all the students were evaluated with a written  exam. Neither Mumuki nor other compiler was used for the exam. The exam was manually corrected by the teachers.
+
+Because the focus of this paper is understanding how different background group of students learn functional programming, we compared results of the different interventions. In the next section we show exercise results with descriptive statistics. We crossed CS1 and CS3 data and compared gender differences. We triangulated these results with qualitative data from observations that provided further indicators of emerging themes. 
+
+\subsection{The CS1 Intervention}
+
+From August to October 2016 a university professor, two teaching assistants and one student assistant taught 15 four-hour functional programming lessons to CS1 students at UNC. The course was taught for eight hours a week divided in two days from 9am to 1pm. This is the first programming course of a 5-year degree in Computer Science. The course started with 55 students that enrolled and attended the course at least two days. From the 55 students, only 2 reported previous experience programming with imperative languages and none of them reported experience with functional programming. The average age was 21 years old. Each 4-four hour lecture was divided in two stages of two hours each. 
+
+During the first stage, the students used Mumuki in the laboratory programming functions in Haskell. Mumuki provided automated formative feedback but also the professor and the teaching assistants walked around the laboratory answering questions about the exercises. 
+
+During the second stage, the students went to a classroom  where the professor explained in the blackboard the concepts practised in the laboratory, presented worked out examples and discussed the most commonly observed errors. No computer was used in the classroom. Students were encouraged to program in Haskell using paper and pencil and to propose test cases in order to manually evaluate their programs. 
+
+Summing up, during the course, students used Mumuki during 30 hours. They also used Mumuki outside the course but 80\% of their submissions were made during class hours. 
+
+\subsection{The CS3 Intervention}
+
+From March to May 2016 a university professor, two teaching assistants and six student assistants taught 9 four-hour functional programming lessons to CS3 students at UTN. The course was taught for four hours a week in a single day from 9am to 1pm. Before this course, all the students learn imperative programming in Pascal and C during two semesters. The course started with 59 students that attended the course for at least two classes. In the previous  semesters, Pascal and C languages were used to teach classical control structures and basic data structures such as lists, stacks, and queues. None of the students reported previous experience with functional programming. The average age was 22 years old.
+
+During the classes, Mumuki was used to introduce new concepts and to practice previously learnt ones. When considered necessary by the professor or the teaching assistant, they stopped the practice and explained some concept in the blackboard or screen projector using Mumuki, discussing errors and sharing different solutions. These explanations lasted 10 minutes in average and never took more than 10\% of the total time. Students were not asked to program on paper and they used Mumuki during the whole lecture. 
+
+Summing up, during the course, students used Mumuki during 36 hours. They also used Mumuki outside the course, 70\% of their submissions were made during class hours. 
